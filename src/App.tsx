@@ -13,8 +13,8 @@ function App() {
         <Layout style={{minHeight: '100vh'}}>
             <Sider collapsible collapsed={collapsed} onCollapse={setCollapsed}>
                 <div className="logo"/>
-                <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-                    <Menu.Item key="1">
+                <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" onClick={e => console.log(e.key)}>
+                    <Menu.Item key="option1">
                         Option 1
                     </Menu.Item>
                     <Menu.Item key="2">
